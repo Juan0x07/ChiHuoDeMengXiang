@@ -1,2 +1,2 @@
-# ChiHuoDeMengXiang
-eat!
+# take-out app
+weixin app
