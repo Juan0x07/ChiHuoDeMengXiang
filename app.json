@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/resto/resto",
+    "pages/index2/index2",
+    "pages/index3/index3",
+    "pages/index4/index4",
+    "pages/index5/index5"
+  ],
+  "window":{
+    "navigationBarTitleText": "图方便",
+    "navigationBarBackgroundColor": "#000000"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index2/index2",
+        "text": "房源"
+      },
+      {
+        "pagePath": "pages/index3/index3",
+        "text": "市场"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "好吃"
+      },
+      {
+        "pagePath": "pages/index4/index4",
+        "text": "论坛"
+      },
+      {
+        "pagePath": "pages/index5/index5",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+swiper{
+  width: 100%;
+  height: 150px;
+}
+image{
+  width: 100%;
+}
+navigator{
+  background-color: red;
+}
+
+.emage{
+  width: 50%;
+}
+.exhibits{
+  margin: 5px;
+  flex-direction:row;
+  display: flex;
+  border:1px solid #70bcf6;
+}
+.title{
+  margin: 5px;
+  justify-content: center;  
+  display: flex;
+}

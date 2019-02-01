@@ -1,0 +1,33 @@
+<!--pages/index/resto/resto.wxml-->
+<!--resto name-->
+<view class="title">{{resto}}</view>
+<!--resto image-->
+<view>
+  <image src='../../../images/01.png'></image>
+</view>
+<!--toolbar-->
+<view class="toolbar">
+      <view class="list-top">
+         <view data-num="1" class="list-menu list-menu1 {{num==1?'cur':''}} {{num==1?true:false}}" bindtap="menuClick">菜品</view>
+         <view data-num="2" class="list-menu list-menu2 {{num==2?'cur':''}} {{num==2?true:false}}" bindtap="menuClick">简介</view>
+         </view>
+</view>
+<view>{{data}}</view>
+<view class ="exhibits">
+  <image class="emage" src='../../../images/01.png'></image>
+  <view>
+    <view wx:for="{{plat}}" wx:key="{{index}}" wx:for-index="key">
+    {{key}}:{{item}}
+    </view>
+  </view>  
+</view>
+
+<view class ="exhibits">
+  <image class="emage" src='../../../images/02.png'></image>
+  <view>
+    <view wx:for="{{plat1}}" wx:key="{{index}}" wx:for-index="key">
+    {{key}}:{{item}}
+    </view>
+  </view>  
+</view>
+
