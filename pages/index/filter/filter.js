@@ -1,37 +1,19 @@
-// pages/index/index.js
+// pages/index/filter/filter.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    //list of plat
-    array: [{
-    plat:{
-      name:"肉",
-      image:"url",
-      price:"66",
-      order:"1",
-      id:'pika'
-    },
-    plat1: {
-      name: "肉1",
-      image: "url2",
-      price: "6",
-      order: "2",
-      id:'oho'
-    },
-    //resto id
-   resto:'chezhong',
-   //tag list
-   tag:['pikachu','miaow','irelia','lux','akali']
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    console.log("options:");
+    console.log(options.id);
   },
 
   /**

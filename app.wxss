@@ -5,17 +5,22 @@ swiper{
 image{
   width: 100%;
 }
-navigator{
-  background-color: red;
+.row{
+  flex-direction:row;
+  display: flex;
 }
-
+.tagfilter{
+   background-color: yellow;
+}
+.tag{
+   background-color: white;
+   margin: 5px;
+}
 .emage{
   width: 50%;
 }
 .exhibits{
   margin: 5px;
-  flex-direction:row;
-  display: flex;
   border:1px solid #70bcf6;
 }
 .title{

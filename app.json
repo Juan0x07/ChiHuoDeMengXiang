@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/index/filter/filter",
     "pages/index/resto/resto",
     "pages/index2/index2",
     "pages/index3/index3",

@@ -1,52 +1,27 @@
 <!--pages/index/index.wxml-->
-
+<!--tag filter-->
+<scroll-view scroll-x class='tagfilter' style="width: 100%">
+  <view class="row">
+    <view wx:for="{{tag}}" wx:key>
+   <navigator url="../../pages/index/filter/filter?id={{item}}"><button class='tag'>#{{item}}</button></navigator> 
+    </view> 
+  </view>
+</scroll-view>
 <!--swiper for ads-->
 <swiper autoplay indicator-dots circular>
   <swiper-item> <image src='../../images/01.png'></image> </swiper-item>
   <swiper-item> <image src='../../images/02.png'></image> </swiper-item>
   <swiper-item> <image src='../../images/03.png'></image> </swiper-item>
 </swiper>
-
 <!--container for plats-->
-<view class ="exhibits">
+<view class ="exhibits row">
   <image class="emage" src='../../images/01.png'></image>
   <view>
     <view wx:for="{{plat}}" wx:key="{{index}}" wx:for-index="key">
     {{key}}:{{item}}
     </view>
-    <navigator url="../../pages/index/resto/resto"> 去看看</navigator>
+    <navigator url="../../pages/index/resto/resto?id={{resto}}"> 
+      <button>chez hong</button>
+    </navigator>
   </view>  
 </view>
-
-<view class ="exhibits">
-  <image class="emage" src='../../images/02.png'></image>
-  <view>
-    <view wx:for="{{plat1}}" wx:key="{{index}}" wx:for-index="key">
-    {{key}}:{{item}}
-    </view>
-    <navigator url="../../pages/index/resto/resto"> 去看看</navigator>
-  </view>  
-</view>
-
-<view class ="exhibits">
-  <image class="emage" src='../../images/03.png'></image>
-  <view>
-    <view wx:for="{{plat1}}" wx:key="{{index}}" wx:for-index="key">
-    {{key}}:{{item}}
-    </view>
-    <navigator url="../../pages/index/resto/resto"> 去看看</navigator>
-  </view>  
-</view>
-
-<!-- 
-<view>{{plat.name}} {{plat.image}} {{plat.price}} </view>
-<view data-id="{{msg}}"><checkbox></checkbox></view>
-<view wx:for="{{plat}}" wx:key="{{index}}">
-  {{index}}:{{item}}
-</view>
-<view class="box" wx:for="{{plat}}" wx:key="{{index}}" wx:for-index="key">
-  {{key}}:{{item}}
-</view>
-<block wx:for="{{plat}}" wx:key="{{index}}" wx:for-index="key">
-  {{key}}:{{item}}
-</block> -->
