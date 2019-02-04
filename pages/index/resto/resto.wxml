@@ -12,22 +12,19 @@
          <view data-num="2" class="list-menu list-menu2 {{num==2?'cur':''}} {{num==2?true:false}}" bindtap="menuClick">简介</view>
          </view>
 </view>
-<view>{{data}}</view>
-<view class ="exhibits">
-  <image class="emage" src='../../../images/01.png'></image>
-  <view>
-    <view wx:for="{{plat}}" wx:key="{{index}}" wx:for-index="key">
-    {{key}}:{{item}}
-    </view>
-  </view>  
+<!--container for introductions-->
+<view hidden="{{num==1?'cur':''}}">{{data}}</view>
+<!--container for plats-->
+<view hidden="{{num==2?'cur':''}}">
+  <view wx:for="{{plats}}" wx:key wx:for-item="plat">
+    <view wx:for="{{plat}}" wx:key>
+      <view class ="exhibits row">
+       <image class="emage" src='{{item.image}}'></image>
+       <view>
+        <view>菜名：{{item.name}}</view>
+        <view>价格：{{item.price}}</view>
+       </view>
+      </view>  
+    </view> 
+  </view>
 </view>
-
-<view class ="exhibits">
-  <image class="emage" src='../../../images/02.png'></image>
-  <view>
-    <view wx:for="{{plat1}}" wx:key="{{index}}" wx:for-index="key">
-    {{key}}:{{item}}
-    </view>
-  </view>  
-</view>
-

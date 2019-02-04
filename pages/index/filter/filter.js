@@ -5,7 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    //list of plat
+    plats: [{
+      plat: {
+        name: "肉",
+        image: "../../../images/01.png",
+        price: "6",
+        resto: 'chezhong',
+        id: [{1: 'pikachu' }]
+      },
+      plat1: {
+        name: "肉1",
+        image: "../../../images/02.png",
+        price: "66",
+        resto: 'polo',
+        id: [{1:'miaow'}, {2:'pikachu'}]
+      }
+    }]
   },
 
   /**
