@@ -14,14 +14,20 @@
   <swiper-item> <image src='../../images/03.png'></image> </swiper-item>
 </swiper>
 <!--container for plats-->
-<view class ="exhibits row">
-  <image class="emage" src='../../images/01.png'></image>
-  <view>
-    <view wx:for="{{plat}}" wx:key="{{index}}" wx:for-index="key">
-    {{key}}:{{item}}
-    </view>
-    <navigator url="../../pages/index/resto/resto?id={{resto}}"> 
-      <button>chez hong</button>
-    </navigator>
-  </view>  
+<view>
+  <view wx:for="{{plats}}" wx:key wx:for-item="plat">
+    <view wx:for="{{plat}}" wx:key>
+      <view class ="exhibits row">
+       <image class="emage" src='{{item.image}}'></image>
+       <view>
+        <view>菜名：{{item.name}}</view>
+        <view>价格：{{item.price}}</view>
+        <navigator url="../../pages/index/resto/resto?id={{item.resto}}"> 
+          <button>{{item.resto}}</button>
+        </navigator>
+       </view>
+      </view>  
+    </view> 
+  </view>
 </view>
+   

@@ -6,21 +6,24 @@ Page({
    */
   data: {
     //list of plat
-    array: [{
-    plat:{
-      name:"肉",
-      image:"url",
-      price:"66",
-      order:"1",
-      id:'pika'
-    },
-    plat1: {
-      name: "肉1",
-      image: "url2",
-      price: "6",
-      order: "2",
-      id:'oho'
-    },
+    plats: [{
+      plat:{
+        name:"肉",
+        image:"../../images/01.png",
+        price:"6",
+        resto: 'chezhong',
+        order:"1",
+        id:'pikachu'
+      },
+      plat1: {
+        name: "肉1",
+        image: "../../images/02.png",
+        price: "66",
+        resto:'polo',
+        order: "2",
+        id:['miaow','pikachu']
+      }
+    }],
     //resto id
    resto:'chezhong',
    //tag list
