@@ -1,9 +1,11 @@
 {
   "pages":[
+    "pages/index2/index2",
     "pages/index/index",
     "pages/index/filter/filter",
     "pages/index/resto/resto",
-    "pages/index2/index2",
+    "pages/index2/filter/filter",
+    "pages/index2/loge/loge",
     "pages/index3/index3",
     "pages/index4/index4",
     "pages/index5/index5"

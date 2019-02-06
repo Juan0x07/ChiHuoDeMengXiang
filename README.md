@@ -7,7 +7,10 @@ weixin app:      wxml & wxss & js & json
 
 index: 好吃
   resto: 饭店
+  filter: 标签筛选 
 index2:房源
+  loge: 房
+  filter: 标签筛选
 index3:市场
 index4:论坛
 index5:我的

@@ -24,8 +24,6 @@ Page({
         id:['miaow','pikachu']
       }
     }],
-    //resto id
-   resto:'chezhong',
    //tag list
    tag:['pikachu','miaow','irelia','lux','akali']
   },

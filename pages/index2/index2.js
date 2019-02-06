@@ -7,20 +7,22 @@ Page({
   data: {
     loges: [{
       loge: {
-        name: "肉",
-        image: "../../../images/01.png",
-        price: "6",
-        resto: 'chezhong',
-        id: [{ 1: 'pikachu' }]
+        id:1,
+        title: "房源",
+        image: "../../images/01.png",
+        price: "666",
+        tag: [{ 1: 'pikachu' }]
       },
       loge2: {
-        name: "肉1",
-        image: "../../../images/02.png",
-        price: "66",
-        resto: 'polo',
-        id: [{ 1: 'miaow' }, { 2: 'pikachu' }]
+        id:2,
+        title: "房源1",
+        image: "../../images/02.png",
+        price: "661",
+        tag: [{ 1: 'miaow' }, { 2: 'pikachu' }]
       }
-    }]
+    }],
+    //tag list
+    tag: ['pikachu', 'miaow', 'irelia', 'lux', 'akali']
   },
 
   /**

@@ -1,51 +1,18 @@
-// pages/index/resto/resto.js
+// pages/index2/loge/loge.js
 Page({
-  menuClick: function (e) {
-    this.setData({
-      num: e.target.dataset.num
-    })
-    if (e.target.dataset.num==2){
-      this.setData({
-        data: "历史"
-      }) 
-    }
-
-  },
 
   /**
    * 页面的初始数据
    */
   data: {
-    num:1,
-    data: "吃的",
-    //list of plat
-    plats: [{
-      plat: {
-        name: "肉",
-        image: "../../../images/01.png",
-        price: "6",
-        resto: 'chezhong',
-        order: "1",
-        tag: 'pikachu'
-      },
-      plat1: {
-        name: "肉1",
-        image: "../../../images/02.png",
-        price: "66",
-        resto: 'polo',
-        order: "2",
-        tag: ['miaow', 'pikachu']
-      }
-    }]
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      resto: options.id
-    })
+
   },
 
   /**

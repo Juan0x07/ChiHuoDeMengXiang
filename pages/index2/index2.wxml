@@ -1,2 +1,26 @@
 <!--pages/index2/index2.wxml-->
-<text>pages/index2/index2.wxml</text>
+<!--tag filter-->
+<scroll-view scroll-x class='tagfilter' style="width: 100%">
+  <view class="row">
+    <view wx:for="{{tag}}" wx:key>
+   <navigator url="../../pages/index2/filter/filter?id={{item}}"><button class='tag'>#{{item}}</button></navigator> 
+    </view> 
+  </view>
+</scroll-view>
+<!--container for loges-->
+<view>
+  <view wx:for="{{loges}}" wx:key wx:for-item="plat">
+    <view wx:for="{{plat}}" wx:key>
+      <view class ="exhibits row">
+       <image class="emage" src='{{item.image}}'></image>
+       <view>
+        <view>标题：{{item.title}}</view>
+        <view>价格：{{item.price}}</view>
+        <navigator url="../../pages/index2/loge/loge"> 
+          <button>去看看</button>
+        </navigator>
+       </view>
+      </view>  
+    </view> 
+  </view>
+</view>
