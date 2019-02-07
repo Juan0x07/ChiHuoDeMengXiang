@@ -1,6 +1,6 @@
 // pages/index5/index5.js
 Page({
-
+ 
   /**
    * 页面的初始数据
    */
@@ -12,9 +12,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.login({
+      success(res) {
+        if (res.code) {
+          // 发起网络请求
+          wx.request({
+            url: 'https://test.com/onLogin',
+            data: {
+              code: res.code
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+      }
+    })
   },
-
+ 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -19,6 +19,13 @@ Page({
         image: "../../images/02.png",
         price: "661",
         tag: [{ 1: 'miaow' }, { 2: 'pikachu' }]
+      },
+      loge3: {
+        id: 3,
+        title: "房源2",
+        image: "../../images/02.png",
+        price: "661",
+        tag: [{ 1: 'miaow' }, { 2: 'pikachu' }]
       }
     }],
     //tag list

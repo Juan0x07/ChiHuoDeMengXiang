@@ -28,3 +28,7 @@ image{
   justify-content: center;  
   display: flex;
 }
+.float_button{
+  position:fixed; 
+  bottom:8rpx;
+}

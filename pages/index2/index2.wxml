@@ -24,3 +24,8 @@
     </view> 
   </view>
 </view>
+<view class="float_button">
+  <navigator url="../../pages/index2/loge/loge"> 
+      <button>我要发布</button>
+  </navigator>
+</view>
