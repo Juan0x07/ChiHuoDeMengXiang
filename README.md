@@ -9,6 +9,7 @@ index: 好吃
   resto: 饭店
   filter: 标签筛选 
 index2:房源
+  myloge: new
   loge: 房
   filter: 标签筛选
 index3:市场
