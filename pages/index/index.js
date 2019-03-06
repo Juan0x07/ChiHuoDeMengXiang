@@ -9,7 +9,7 @@ Page({
     plats: [{
       plat:{
         name:"肉",
-        image:"../../images/01.png",
+        image:"../../images/plat1.jpg",
         price:"6",
         resto: 'chezhong',
         order:"1",
@@ -23,11 +23,17 @@ Page({
         order: "2",
         id:['miaow','pikachu']
       }
-    }],
-   //tag list
-   tag:['pikachu','miaow','irelia','lux','akali']
+    }]
   },
-
+  /**
+   * 加载search页面
+   */
+  goSearch: function () {
+    wx.navigateTo({
+      url: '../../pages/index/search/search'
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */

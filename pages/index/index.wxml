@@ -1,23 +1,23 @@
 <!--pages/index/index.wxml-->
-<!--tag filter-->
-<scroll-view scroll-x class='tagfilter' style="width: 100%">
-  <view class="row">
-    <view wx:for="{{tag}}" wx:key>
-   <navigator url="../../pages/index/filter/filter?id={{item}}"><button class='tag'>#{{item}}</button></navigator> 
-    </view> 
-  </view>
-</scroll-view>
+<!--search-->
+<van-search  bind:focus='goSearch' placeholder="搜你想吃" />
 <!--swiper for ads-->
 <swiper autoplay indicator-dots circular>
+<swiper-item> <image src='../../images/00.png'></image> </swiper-item>
   <swiper-item> <image src='../../images/01.png'></image> </swiper-item>
   <swiper-item> <image src='../../images/02.png'></image> </swiper-item>
   <swiper-item> <image src='../../images/03.png'></image> </swiper-item>
 </swiper>
+<!--notification-->
+<van-notice-bar
+  text="从即日起，外卖团队将就送餐服务进行调整" backgroundColor='white' color='#a0a0a0'
+/>
 <!--container for plats-->
-<view>
+<view class='part1 center'>
+<view class='title1'>热门中餐</view>
   <view wx:for="{{plats}}" wx:key wx:for-item="plat">
     <view wx:for="{{plat}}" wx:key>
-      <view class ="exhibits row">
+      <view class ="part2 row">
        <image class="emage" src='{{item.image}}'></image>
        <view>
         <view>菜名：{{item.name}}</view>
@@ -25,8 +25,7 @@
         <navigator url="../../pages/index/resto/resto?id={{item.resto}}"> 
           <button>{{item.resto}}</button>
         </navigator>
-       </view>
-      </view>  
+       </view></view> <view class='line'></view>  
     </view> 
   </view>
 </view>
