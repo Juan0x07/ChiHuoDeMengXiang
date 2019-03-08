@@ -8,7 +8,7 @@ Page({
     //list of plat
     plats: [{
       plat:{
-        name:"肉",
+        name:"一大碗肥牛饭",
         image:"../../images/plat1.jpg",
         price:"6",
         resto: 'chezhong',
@@ -16,14 +16,32 @@ Page({
         id:'pikachu'
       },
       plat1: {
-        name: "肉1",
-        image: "../../images/02.png",
+        name: "饺子",
+        image: "../../images/plat2.jpg",
         price: "66",
         resto:'polo',
         order: "2",
         id:['miaow','pikachu']
       }
-    }]
+    }],
+    restos: [{
+      plat: {
+        name: "宏记中餐馆",
+        image: "../../images/plat1.jpg",
+        price: "6",
+        resto: 'chezhong',
+        order: "1",
+        id: 'pikachu'
+      },
+      plat1: {
+        name: "冯记中餐馆",
+        image: "../../images/plat2.jpg",
+        price: "66",
+        resto: 'polo',
+        order: "2",
+        id: ['miaow', 'pikachu']
+      }
+    }],
   },
   /**
    * 加载search页面

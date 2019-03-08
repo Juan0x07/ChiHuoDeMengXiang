@@ -1,19 +1,25 @@
 swiper{
-  margin: 15rpx;
-  margin-bottom: 25rpx;
-  height: 250rpx;
-  border-radius: 30rpx;
+  margin: 15rpx;margin-bottom: 25rpx;
+  height: 250rpx;border-radius: 30rpx;box-shadow: 0rpx 5rpx 10rpx 0rpx #a1a1a1;
 }
 swiper-item{border-radius: 30rpx;}
 image{width: 100%;}
+.price{color:red;font-weight:bold;font-size:30rpx}
 .part1{
   border-radius: 20rpx;
   margin: 25rpx;
   background-color: white;
 }
+.padbot{padding-bottom:10rpx;}
 .center{margin-left:15rpx;margin-right:15rpx;}
-.title1{padding:35rpx;font-size:45rpx}
-.part2{margin-left:35rpx;margin-right:35rpx;}
+.little{margin-top:10rpx;font-size:20rpx;font-weight:bold;color:#a1a1a1}
+.black{margin-left:15rpx;color:black}
+.nearby{margin-left:3rpx;}
+.title1{margin-left:25rpx;margin-top:35rpx;margin-right:10rpx;font-size:35rpx;font-weight:bold;color:#333333}
+.titlefollower{color:red;font-size:22rpx;font-weight:bold;margin-top:47rpx}
+.title2{font-size:28rpx;font-weight:bold;color:#333333}
+.part2{margin:22rpx}
+.part3{margin-left:20rpx;margin-top:13rpx;}
 .row{
   flex-direction:row;
   display: flex;
@@ -26,9 +32,9 @@ image{width: 100%;}
    margin: 5px;
 }
 .emage{
-  width: 250rpx;
-  height: 250rpx;
-  margin: 30rpx;
+  width: 155rpx;
+  height: 155rpx;
+  margin: 10rpx;
   border-radius: 10rpx;
 }
 .title{

@@ -9,23 +9,48 @@
   <swiper-item> <image src='../../images/03.png'></image> </swiper-item>
 </swiper>
 <!--notification-->
-<van-notice-bar
+<van-notice-bar 
   text="从即日起，外卖团队将就送餐服务进行调整" backgroundColor='white' color='#a0a0a0'
 />
 <!--container for plats-->
 <view class='part1 center'>
-<view class='title1'>热门中餐</view>
+<view class ="row">
+  <view class='title1'>特价菜品</view>
+  <view class='titlefollower'>Hot!</view>
+</view>
   <view wx:for="{{plats}}" wx:key wx:for-item="plat">
     <view wx:for="{{plat}}" wx:key>
       <view class ="part2 row">
        <image class="emage" src='{{item.image}}'></image>
-       <view>
-        <view>菜名：{{item.name}}</view>
-        <view>价格：{{item.price}}</view>
+       <view class='part3'>
+        <view class='title2'>{{item.name}}</view>
+        <view class='little' >不好吃不要钱</view>
+        <view class='little' >赞 123</view>
+        <view class ="row">
+          <view class='price'>€{{item.price}}</view>
+          <view class='little nearby'>/份</view>
+        </view>
+        <!--
         <navigator url="../../pages/index/resto/resto?id={{item.resto}}"> 
           <button>{{item.resto}}</button>
         </navigator>
+        -->
        </view></view> <view class='line'></view>  
+    </view> 
+  </view>
+</view>
+<!--container for restos-->
+<view class='part1 center'>
+<view class ="row">
+<view class='title1'>热门中餐</view></view>
+  <view wx:for="{{restos}}" wx:key wx:for-item="plat">
+    <view wx:for="{{plat}}" wx:key>
+     <navigator url="../../pages/index/resto/resto?id={{item.resto}}"> 
+      <view class ="part2 row">
+       <image class="emage" src='{{item.image}}'></image>
+       <view class='part3'>
+        <view class='title2'>{{item.name}}</view>
+       </view></view> <view class='line'></view>  </navigator> 
     </view> 
   </view>
 </view>

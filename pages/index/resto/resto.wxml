@@ -1,30 +1,55 @@
 <!--pages/index/resto/resto.wxml-->
-<!--resto name-->
-<view class="title">{{resto}}</view>
+<view class ="row">
 <!--resto image-->
-<view>
-  <image src='../../../images/01.png'></image>
-</view>
-<!--toolbar-->
-<view class="toolbar">
-      <view class="list-top">
-         <view data-num="1" class="list-menu list-menu1 {{num==1?'cur':''}} {{num==1?true:false}}" bindtap="menuClick">菜品</view>
-         <view data-num="2" class="list-menu list-menu2 {{num==2?'cur':''}} {{num==2?true:false}}" bindtap="menuClick">简介</view>
-         </view>
+  <view>
+    <image class='emage' src='../../../images/01.png'></image>
+  </view>
+  <view class ="row">
+  <!--resto name
+  <view class="title">{{resto}}</view>-->
+  <view class="title">冯记中餐馆</view>
+  <view>加微信</view>
+  </view>
 </view>
 <!--container for introductions-->
-<view hidden="{{num==1?'cur':''}}">{{data}}</view>
+<view class='part1 center padbot'>
+<view class ="row">
+  <view class='little black'>商家简介：</view>
+  <view class='little'>大碗喝汤，大口吃肉！</view>
+</view>
+<view class ="row">
+  <view class='little black'>餐厅地址：</view>
+  <view class='little'>大碗喝汤，大口吃肉！</view>
+</view>
+<view class ="row">
+  <view class='little black'>联系电话：</view>
+  <view class='little'>大碗喝汤，大口吃肉！</view>
+</view>
+</view>
+
 <!--container for plats-->
-<view hidden="{{num==2?'cur':''}}">
+<view class='part1 center'>
+<view class ="row">
+  <view class='title1'>菜品</view>
+</view>
   <view wx:for="{{plats}}" wx:key wx:for-item="plat">
     <view wx:for="{{plat}}" wx:key>
-      <view class ="exhibits row">
+      <view class ="part2 row">
        <image class="emage" src='{{item.image}}'></image>
-       <view>
-        <view>菜名：{{item.name}}</view>
-        <view>价格：{{item.price}}</view>
-       </view>
-      </view>  
+       <view class='part3'>
+        <view class='title2'>{{item.name}}</view>
+        <view class='little' >不好吃不要钱</view>
+        <view class='little' >赞 123</view>
+        <view class ="row">
+          <view class='price'>€{{item.price}}</view>
+          <view class='little nearby'>/份</view>
+        </view>
+        <!--
+        <navigator url="../../pages/index/resto/resto?id={{item.resto}}"> 
+          <button>{{item.resto}}</button>
+        </navigator>
+        -->
+       </view></view> <view class='line'></view>  
     </view> 
   </view>
 </view>

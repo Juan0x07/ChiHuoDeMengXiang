@@ -1,5 +1,4 @@
 <!--pages/index/search/search.wxml-->
-<text>pages/index/search/search.wxml</text>
 <!--search-->
 <van-search value="{{ value }}"
  bind:focus='goSearch'
