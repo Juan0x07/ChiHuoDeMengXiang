@@ -18,14 +18,13 @@
   <view class='title1'>特价菜品</view>
   <view class='titlefollower'>Hot!</view>
 </view>
-  <view wx:for="{{plats}}" wx:key wx:for-item="plat">
-    <view wx:for="{{plat}}" wx:key>
+  <view wx:for="{{specialPlats}}" wx:key >
       <view class ="part2 row">
-       <image class="emage" src='{{item.image}}'></image>
+       <image class="emage" src='../../images/plat1.jpg'></image>
        <view class='part3'>
         <view class='title2'>{{item.name}}</view>
-        <view class='little' >不好吃不要钱</view>
-        <view class='little' >赞 123</view>
+        <view class='little'>{{item.description}}</view>
+         <view class='little'>赞 {{item.aimer}}</view>
         <view class ="row">
           <view class='price'>€{{item.price}}</view>
           <view class='little nearby'>/份</view>
@@ -36,22 +35,20 @@
         </navigator>
         -->
        </view></view> <view class='line'></view>  
-    </view> 
   </view>
 </view>
 <!--container for restos-->
 <view class='part1 center'>
 <view class ="row">
 <view class='title1'>热门中餐</view></view>
-  <view wx:for="{{restos}}" wx:key wx:for-item="plat">
-    <view wx:for="{{plat}}" wx:key>
+  <view wx:for="{{allRestaurants}}" wx:key>
      <navigator url="../../pages/index/resto/resto?id={{item.resto}}"> 
       <view class ="part2 row">
-       <image class="emage" src='{{item.image}}'></image>
+      <image class="emage" src='../../images/plat1.jpg'></image>
        <view class='part3'>
         <view class='title2'>{{item.name}}</view>
-       </view></view> <view class='line'></view>  </navigator> 
+        <view class='little'>{{item.description}}</view>
+       </view></view> </navigator> 
     </view> 
-  </view>
 </view>
    

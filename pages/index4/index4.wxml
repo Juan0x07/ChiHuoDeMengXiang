@@ -1,2 +1,13 @@
 <!--pages/index4/index4.wxml-->
-<text>pages/index4/index4.wxml</text>
+<text>论坛</text>
+<!--container for restos-->
+<view class='part1 center'>
+<view class='title1'>帖子</view>
+  <view wx:for="{{allDiscussions}}" wx:key>
+      <view class ="part2">
+       <view class='part3'>
+        <view class='title2'>{{item.title}}</view>
+        <view class='little'>{{item.description}}</view>
+       </view> </view>
+    </view> 
+</view>

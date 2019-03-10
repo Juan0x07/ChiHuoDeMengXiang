@@ -5,7 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    "allDiscussions": [
+      {
+        "id": 1,
+        "title": "求翻译",
+        "description": "找翻译呀找翻译",
+        "tag": "求助",
+        "owner": 1
+      },
+      {
+        "id": 2,
+        "title": "求翻译1",
+        "description": "找翻译呀找翻译",
+        "tag": "求助",
+        "owner": 1
+      },
+      {
+        "id": 3,
+        "title": "求翻译2",
+        "description": "找翻译呀找翻译",
+        "tag": "求助",
+        "owner": 1
+      }
+    ]
   },
 
   /**

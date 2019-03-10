@@ -16,27 +16,41 @@ Page({
    * 页面的初始数据
    */
   data: {
-    num:1,
-    data: "吃的",
-    //list of plat
-    plats: [{
-      plat: {
-        name: "肉",
-        image: "../../../images/01.png",
-        price: "6",
-        resto: 'chezhong',
-        order: "1",
-        tag: 'pikachu'
+    "platsByRestaurant": [
+      {
+        "id": 1,
+        "name": "特色生煎包",
+        "restaurantId": 1,
+        "image": null,
+        "price": 0.5,
+        "description": "正宗上海生煎包，皮薄馅大易推倒",
+        "aimer": 2,
+        "isSpecial": true,
+        "tags": [
+          {
+            "platTag": "包子"
+          },
+          {
+            "platTag": "鲁菜"
+          }
+        ]
       },
-      plat1: {
-        name: "肉1",
-        image: "../../../images/02.png",
-        price: "66",
-        resto: 'polo',
-        order: "2",
-        tag: ['miaow', 'pikachu']
+      {
+        "id": 4,
+        "name": "饺子",
+        "restaurantId": 1,
+        "image": null,
+        "price": 8.5,
+        "description": "张张饺子",
+        "aimer": 1,
+        "isSpecial": false,
+        "tags": [
+          {
+            "platTag": "饺子"
+          }
+        ]
       }
-    }]
+    ]
   },
 
   /**

@@ -1,0 +1,52 @@
+{
+    "specialPlats": [
+        {
+            "id": 1,
+            "name": "特色生煎包",
+            "restaurantId": 1,
+            "image": null,
+            "price": 0.5,
+            "description": "正宗上海生煎包，皮薄馅大易推倒",
+            "aimer": 2,
+            "isSpecial": true,
+            "tags": [
+                {
+                    "platTag": "包子"
+                },
+                {
+                    "platTag": "鲁菜"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "水煮鱼",
+            "restaurantId": 2,
+            "image": null,
+            "price": 10.5,
+            "description": "川菜经典水煮鱼",
+            "aimer": 1,
+            "isSpecial": true,
+            "tags": [
+                {
+                    "platTag": "川菜"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "私厨小炒",
+            "restaurantId": 3,
+            "image": null,
+            "price": 8.5,
+            "description": "冯氏私厨小炒，梦中的味道",
+            "aimer": 1,
+            "isSpecial": true,
+            "tags": [
+                {
+                    "platTag": "淮菜"
+                }
+            ]
+        }
+    ]
+}

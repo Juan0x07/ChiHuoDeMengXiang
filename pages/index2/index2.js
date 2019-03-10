@@ -5,29 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-    loges: [{
-      loge: {
-        id:1,
-        title: "房源",
-        image: "../../images/01.png",
-        price: "666",
-        tag: [{ 1: 'pikachu' }]
-      },
-      loge2: {
-        id:2,
-        title: "房源1",
-        image: "../../images/02.png",
-        price: "661",
-        tag: [{ 1: 'miaow' }, { 2: 'pikachu' }]
-      },
-      loge3: {
-        id: 3,
-        title: "房源2",
-        image: "../../images/02.png",
-        price: "661",
-        tag: [{ 1: 'miaow' }, { 2: 'pikachu' }]
+    "allHouses": [
+      {
+        "id": 1,
+        "image1": null,
+        "image2": null,
+        "image3": null,
+        "owner": 1,
+        "title": "三大附近好房出租",
+        "description": "家电俱全",
+        "location": "118 route de narbonne",
+        "surface": 20.7,
+        "price": 350,
+        "start": "2019-03-07T00:00:00.000+0000",
+        "locationtag": "三大附近",
+        "traffictag": "A线沿线",
+        "contactName": "张女士",
+        "contactNum": "0608787878",
+        "contactWechat": "10001000",
+        "orders": 1,
+        "long": true,
+        "shared": false
       }
-    }],
+    ],
     //tag list
     tag: ['pikachu', 'miaow', 'irelia', 'lux', 'akali']
   },

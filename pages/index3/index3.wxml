@@ -1,2 +1,17 @@
 <!--pages/index3/index3.wxml-->
-<text>pages/index3/index3.wxml</text>
+<text>二手</text>
+<!--container for restos-->
+<view class='part1 center'>
+<view class ="row">
+<view class='title1'>二手商品</view></view>
+  <view wx:for="{{allObjects}}" wx:key>
+      <view class ="part2 row">
+      <image class="emage" src='../../images/plat1.jpg'></image>
+       <view class='part3'>
+        <view class='title2'>{{item.name}}</view>
+        <view class='little'>{{item.discription}}</view>
+        <view class='little'>赞 {{item.aimer}}</view>
+        <view class='price'>€{{item.price}}</view>
+       </view></view> 
+    </view> 
+</view>

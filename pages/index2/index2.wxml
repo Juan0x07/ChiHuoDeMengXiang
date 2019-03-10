@@ -8,21 +8,22 @@
   </view>
 </scroll-view>
 <!--container for loges-->
-<view>
-  <view wx:for="{{loges}}" wx:key wx:for-item="plat">
-    <view wx:for="{{plat}}" wx:key>
-      <view class ="exhibits row">
-       <image class="emage" src='{{item.image}}'></image>
-       <view>
-        <view>标题：{{item.title}}</view>
-        <view>价格：{{item.price}}</view>
-        <navigator url="../../pages/index2/loge/loge"> 
-          <button>去看看</button>
-        </navigator>
-       </view>
-      </view>  
+<view class='part1 center'>
+<view class ="row">
+<view class='title1'>房源</view></view>
+  <view wx:for="{{allHouses}}" wx:key>
+      <view class ="part2 row">
+      <image class="emage" src='../../images/plat1.jpg'></image>
+       <view class='part3'>
+        <view class='title2'>{{item.title}}</view>
+        <view class='little'>{{item.description}}</view>
+        <view class='little'>{{item.surface}} m²</view>
+        <view class ="row">
+          <view class='price'>€{{item.price}}</view>
+          <view class='little nearby'>/月</view>
+        </view>
+       </view></view> 
     </view> 
-  </view>
 </view>
 <view class="float_button">
   <navigator url="../../pages/index2/myloge/myloge"> 

@@ -32,14 +32,13 @@
 <view class ="row">
   <view class='title1'>菜品</view>
 </view>
-  <view wx:for="{{plats}}" wx:key wx:for-item="plat">
-    <view wx:for="{{plat}}" wx:key>
+  <view wx:for="{{platsByRestaurant}}" wx:key>
       <view class ="part2 row">
        <image class="emage" src='{{item.image}}'></image>
        <view class='part3'>
         <view class='title2'>{{item.name}}</view>
-        <view class='little' >不好吃不要钱</view>
-        <view class='little' >赞 123</view>
+        <view class='little' >{{item.description}}</view>
+        <view class='little' >赞 {{item.aimer}}</view>
         <view class ="row">
           <view class='price'>€{{item.price}}</view>
           <view class='little nearby'>/份</view>
@@ -51,5 +50,4 @@
         -->
        </view></view> <view class='line'></view>  
     </view> 
-  </view>
 </view>
