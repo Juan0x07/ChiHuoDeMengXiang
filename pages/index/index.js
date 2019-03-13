@@ -106,6 +106,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.login({
+      success(res) {
+        if (res.code) {
+          // 发起网络请求
+          wx.request({
+            url: '',
+            data: {
+              code: res.code
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+      }
+    })
     var that = this//不要漏了这句，很重要
     /** wx.request({
       url: 'http://news-at.zhihu.com/api/4/news/latest',
