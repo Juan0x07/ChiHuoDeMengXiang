@@ -1,5 +1,5 @@
 <!--pages/index2/index2.wxml-->
-<!--tag filter-->
+<!--old tag filter-->
 <scroll-view scroll-x class='tagfilter' style="width: 100%">
   <view class="row">
     <view wx:for="{{tag}}" wx:key>
@@ -7,10 +7,25 @@
     </view> 
   </view>
 </scroll-view>
+<!--tag filter-->
+<view class='part1 center padtop'>
+<button class="btn_mini" plain='true'>全部不限</button>
+<view class='taglittle black'>出租时长</view>
+<view class ="row padtop">
+  <button class="btn_mini">不限</button>
+  <button class="btn_mini">短租</button>
+  <button class="btn_mini">长租</button>
+</view>
+<view class='taglittle black'>展示</view>
+<view class ="row padtop">
+  <button class="btn_mini">选中</button>
+  <button class="btn_mini" plain='true'>未选中</button>
+</view>
+
+</view> 
 <!--container for loges-->
 <view class='part1 center'>
-<view class ="row">
-<view class='title1'>房源</view></view>
+<view class ="row"></view>
   <view wx:for="{{allHouses}}" wx:key>
       <view class ="part2 row">
       <image class="emage" src='../../images/plat1.jpg'></image>
@@ -25,8 +40,7 @@
        </view></view> 
     </view> 
 </view>
-<view class="float_button">
+
   <navigator url="../../pages/index2/myloge/myloge"> 
-      <button>我要发布</button>
+      <button class="fabu">我要发布</button>
   </navigator>
-</view>

@@ -2,7 +2,7 @@ App({
   globalData: {
     openid: null
   },
-  onLaunch: function () {
+  onLaunch: function (){
     console.log('onLaunch');
     this.getData();
     this.getOpenid();

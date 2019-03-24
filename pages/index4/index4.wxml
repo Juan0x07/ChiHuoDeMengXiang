@@ -1,13 +1,22 @@
 <!--pages/index4/index4.wxml-->
-<text>论坛</text>
-<!--container for restos-->
-<view class='part1 center'>
-<view class='title1'>帖子</view>
+<!--swiper for ads-->
+<swiper autoplay indicator-dots circular>
+<swiper-item> <image src='../../images/00.png'></image> </swiper-item>
+  <swiper-item> <image src='../../images/01.png'></image> </swiper-item>
+  <swiper-item> <image src='../../images/02.png'></image> </swiper-item>
+  <swiper-item> <image src='../../images/03.png'></image> </swiper-item>
+</swiper>
+<!--notification-->
+<van-notice-bar 
+  text="在生活模块，你可以发布求助，招工等帖子" backgroundColor='white' color='#a0a0a0'
+/>
+<!--container-->
+<view class='part1 center padtop'>
   <view wx:for="{{allDiscussions}}" wx:key>
       <view class ="part2">
        <view class='part3'>
         <view class='title2'>{{item.title}}</view>
         <view class='little'>{{item.description}}</view>
-       </view> </view>
-    </view> 
-</view>
+       </view> </view><view class='line'></view>  
+</view> </view>
+<!--微信 电话 qq ... 联系方式-->

@@ -30,7 +30,7 @@
 <!--container for plats-->
 <view class='part1 center'>
 <view class ="row">
-  <view class='title1'>菜品</view>
+  <view class='title1'>热销菜品</view>
 </view>
   <view wx:for="{{platsByRestaurant}}" wx:key>
       <view class ="part2 row">

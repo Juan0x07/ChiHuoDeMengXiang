@@ -4,17 +4,17 @@
     "van-notice-bar": "/dist/notice-bar/index"
   },
   "pages":[
+    "pages/index2/index2",
+    "pages/index5/index5",
+    "pages/index4/index4",
     "pages/index/index",
     "pages/index/search/search",
-    "pages/index2/index2",
     "pages/index2/myloge/myloge",
     "pages/index/filter/filter",
     "pages/index/resto/resto",
     "pages/index2/filter/filter",
     "pages/index2/loge/loge",
-    "pages/index3/index3",
-    "pages/index4/index4",
-    "pages/index5/index5"
+    "pages/index3/index3"
   ],
   "window":{
     "navigationBarTitleText": "图方便",
@@ -25,7 +25,7 @@
     "list": [
       {
         "pagePath": "pages/index2/index2",
-        "text": "房源"
+        "text": "租房"
       },
       {
         "pagePath": "pages/index3/index3",
@@ -37,7 +37,7 @@
       },
       {
         "pagePath": "pages/index4/index4",
-        "text": "论坛"
+        "text": "生活"
       },
       {
         "pagePath": "pages/index5/index5",
