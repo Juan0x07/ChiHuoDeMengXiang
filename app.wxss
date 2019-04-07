@@ -2,7 +2,7 @@ swiper{
   margin: 15rpx;margin-bottom: 25rpx;
   height: 250rpx;border-radius: 30rpx;box-shadow: 0rpx 5rpx 10rpx 0rpx #a1a1a1;
 }
-swiper-item{border-radius: 30rpx;}
+swiper-item{border-radius:30rpx;}
 image{width: 100%;}
 .price{color:red;font-weight:bold;font-size:30rpx}
 .part1{
@@ -10,11 +10,11 @@ image{width: 100%;}
   margin: 25rpx;
   background-color: white;
 }
-.zanview{display: flex;flex-direction: row-reverse;}
-.zanbtn{background-color: #FFCC00;}
+
 .padbot{padding-bottom:10rpx;}
 .center{margin-left:15rpx;margin-right:15rpx;}
 .little{margin-top:10rpx;font-size:20rpx;font-weight:bold;color:#a1a1a1}
+.taglittle{margin-top:10rpx;font-size:25rpx;font-weight:bold;margin-bottom:8rpx}
 .black{margin-left:15rpx;color:black}
 .nearby{margin-left:3rpx;}
 .title1{margin-left:25rpx;margin-top:35rpx;margin-right:10rpx;font-size:35rpx;font-weight:bold;color:#333333}

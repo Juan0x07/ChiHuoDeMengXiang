@@ -1,6 +1,7 @@
 // pages/index/index.js
+//获取app变量
+var app = getApp()
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -106,24 +107,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.login({
-      success(res) {
-        if (res.code) {
-          // 发起网络请求
-          wx.request({
-            url: '',
-            data: {
-              code: res.code
-            }
-          })
-        } else {
-          console.log('登录失败！' + res.errMsg)
-        }
-      }
-    })
-    var that = this//不要漏了这句，很重要
+    var that = this;//不要漏了这句，很重要
     /** wx.request({
-      url: 'http://news-at.zhihu.com/api/4/news/latest',
+      url: '',
       headers: {
         'Content-Type': 'application/json'
       },
@@ -135,9 +121,16 @@ Page({
         })
       }
     })*/
-    
+    console.log('onLoad');
+    var openid = app.globalData.openid;
+    if (app.globalData.openid && app.globalData.openid != '') {    
+      console.log("openid : " + openid);
+    }
+    setTimeout(function () {
+      console.log("openid : " + app.globalData.openid);
+    }, 3000) 
   },
-  
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
