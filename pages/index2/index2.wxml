@@ -1,23 +1,20 @@
 <!--pages/index2/index2.wxml-->
-<!--old tag filter-->
-<scroll-view scroll-x class='tagfilter' style="width: 100%">
-  <view class="row">
-    <view wx:for="{{tag}}" wx:key>
-   <navigator url="../../pages/index2/filter/filter?id={{item}}"><button class='tag'>#{{item}}</button></navigator> 
-    </view> 
-  </view>
-</scroll-view>
 <!--tag filter-->
-<view class='part1 center padtop'>
+<view class='part1 center padtop padbot'>
 <button class="btn_mini" plain='true'>全部不限</button>
 <view class='taglittle black'>出租时长</view>
-<view class ="row padtop">
+<view class ="row">
   <button class="btn_mini">不限</button>
-  <button class="btn_mini">短租</button>
+  <navigator url="../../pages/index2?tag={{item}}"><button class="btn_mini">短租</button></navigator> 
   <button class="btn_mini">长租</button>
 </view>
+<view class='taglittle black'>地点</view>
+<view class ="row">
+  <button class="btn_mini">不限</button>
+  <button class="btn_mini">地铁沿线</button>
+</view>
 <view class='taglittle black'>展示</view>
-<view class ="row padtop">
+<view class ="row">
   <button class="btn_mini">选中</button>
   <button class="btn_mini" plain='true'>未选中</button>
 </view>

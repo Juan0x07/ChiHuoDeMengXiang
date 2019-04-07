@@ -27,10 +27,8 @@
 </view>
 
 <!--fabu-->
-<view class="float_button">
   <navigator url="../../pages/index4/myhelp/myhelp"> 
-      <button>我要发布</button>
+      <button class="fabu">我要发布</button>
   </navigator>
-</view>
 
 <!--微信 电话 qq ... 联系方式-->
