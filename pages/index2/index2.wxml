@@ -12,6 +12,7 @@
 <view class ="row">
 <view class='title1'>房源</view></view>
   <view wx:for="{{allHouses}}" wx:key>
+  <navigator url="../../pages/index2/loge/loge?id={{item.id}}"> 
       <view class ="part2 row">
       <image class="emage" src='../../images/plat1.jpg'></image>
        <view class='part3'>
@@ -23,6 +24,7 @@
           <view class='little nearby'>/月</view>
         </view>
        </view></view> 
+  </navigator> 
     </view> 
 </view>
 <view class="float_button">

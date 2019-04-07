@@ -4,6 +4,7 @@
     "van-notice-bar": "/dist/notice-bar/index"
   },
   "pages":[
+    "pages/index4/index4",
     "pages/index/index",
     "pages/index/search/search",
     "pages/index2/index2",
@@ -13,7 +14,8 @@
     "pages/index2/filter/filter",
     "pages/index2/loge/loge",
     "pages/index3/index3",
-    "pages/index4/index4",
+    "pages/index4/help/help",
+    "pages/index4/myhelp/myhelp",
     "pages/index5/index5"
   ],
   "window":{
@@ -37,7 +39,7 @@
       },
       {
         "pagePath": "pages/index4/index4",
-        "text": "论坛"
+        "text": "生活"
       },
       {
         "pagePath": "pages/index5/index5",

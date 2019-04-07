@@ -10,6 +10,8 @@ image{width: 100%;}
   margin: 25rpx;
   background-color: white;
 }
+.zanview{display: flex;flex-direction: row-reverse;}
+.zanbtn{background-color: #FFCC00;}
 .padbot{padding-bottom:10rpx;}
 .center{margin-left:15rpx;margin-right:15rpx;}
 .little{margin-top:10rpx;font-size:20rpx;font-weight:bold;color:#a1a1a1}
@@ -20,10 +22,7 @@ image{width: 100%;}
 .title2{font-size:28rpx;font-weight:bold;color:#333333}
 .part2{margin:22rpx}
 .part3{margin-left:20rpx;margin-top:13rpx;}
-.row{
-  flex-direction:row;
-  display: flex;
-}
+.row{flex-direction:row;display: flex;}
 .tagfilter{
    background-color: yellow;
 }

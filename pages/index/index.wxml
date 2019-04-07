@@ -9,7 +9,7 @@
   <swiper-item> <image src='../../images/03.png'></image> </swiper-item>
 </swiper>
 <!--notification-->
-<van-notice-bar 
+<van-notice-bar left-icon="https://img.yzcdn.cn/1.png"
   text="从即日起，外卖团队将就送餐服务进行调整" backgroundColor='white' color='#a0a0a0'
 />
 <!--container for plats-->
@@ -28,12 +28,8 @@
         <view class ="row">
           <view class='price'>€{{item.price}}</view>
           <view class='little nearby'>/份</view>
+          <view class='zanview'><button class='little nearby zanbtn'>点赞</button></view>
         </view>
-        <!--
-        <navigator url="../../pages/index/resto/resto?id={{item.resto}}"> 
-          <button>{{item.resto}}</button>
-        </navigator>
-        -->
        </view></view> <view class='line'></view>  
   </view>
 </view>
@@ -49,6 +45,6 @@
         <view class='title2'>{{item.name}}</view>
         <view class='little'>{{item.description}}</view>
        </view></view> </navigator> 
-    </view> 
+   <view class='line'></view>   </view> 
 </view>
    

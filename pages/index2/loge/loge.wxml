@@ -1,2 +1,3 @@
 <!--pages/index2/loge/loge.wxml-->
 <text>pages/index2/loge/loge.wxml</text>
+<view>{loge}</view>
