@@ -6,15 +6,14 @@
   <swiper-item> <image src='../../images/02.png'></image> </swiper-item>
   <swiper-item> <image src='../../images/03.png'></image> </swiper-item>
 </swiper>
-
-<!--container for helps-->
-<view class='part1 center'>
-<view class ="row">
-<view class='title1'>帖子</view></view>
 <!--notification-->
 <van-notice-bar 
   text="在生活模块，你可以发布求助，招工等帖子" backgroundColor='white' color='#a0a0a0'
 />
+<!--container for helps-->
+<view class='part1 center'>
+<view class ="row">
+<view class='title1'>帖子</view></view>
 <!--container-->
 <view class='part1 center padtop'>
   <view wx:for="{{allDiscussions}}" wx:key>
@@ -31,7 +30,7 @@
 <view class="float_button">
   <navigator url="../../pages/index4/myhelp/myhelp"> 
       <button>我要发布</button>
-  </navigator>
-</view><view class='line'></view>  
+  </navigator><view class='line'></view>  
+</view>
 </view>
 <!--微信 电话 qq ... 联系方式-->
