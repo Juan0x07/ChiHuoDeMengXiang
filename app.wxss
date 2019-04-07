@@ -10,7 +10,13 @@ image{width: 100%;}
   margin: 25rpx;
   background-color: white;
 }
-
+.zanview{display: flex;flex-direction: row-reverse;}
+.zanbtn{background-color: #FFCC00;}
+.fabu{float:right;position:fixed;right:20rpx;bottom:20rpx;border-radius:20rpx;color:#fff;background-color:rgb(82, 209, 208);}
+.btn_mini{color:#fff;background-color:rgb(82, 209, 208);display:inline-block;padding:0 1.32em;line-height:2.3;font-size:13px;border-radius: 20rpx}
+.tagb_d{color:#a1a1a1;border-radius: 20rpx;font-weight: 20rpx;}
+.tagb_c{background-color:rgb(82, 209, 208);color:rgb(82, 209, 208);}
+.padtop{padding-top:10rpx;}
 .padbot{padding-bottom:10rpx;}
 .center{margin-left:15rpx;margin-right:15rpx;}
 .little{margin-top:10rpx;font-size:20rpx;font-weight:bold;color:#a1a1a1}
