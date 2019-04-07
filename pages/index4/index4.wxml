@@ -12,8 +12,7 @@
 />
 <!--container for helps-->
 <view class='part1 center'>
-<view class ="row">
-<view class='title1'>帖子</view></view>
+<view class ="row"><view class='title1'>帖子</view></view>
 <!--container-->
 <view class='part1 center padtop'>
   <view wx:for="{{allDiscussions}}" wx:key>
@@ -23,14 +22,15 @@
         <view class='title2'>{{item.title}}</view>
         <view class='little'>{{item.description}}</view>
         </view>
-       </view> </navigator> 
-    <view class='line'></view></view> 
+       </view></navigator>
+    <view class='line'></view></view> </view> 
 </view>
+
 <!--fabu-->
 <view class="float_button">
   <navigator url="../../pages/index4/myhelp/myhelp"> 
       <button>我要发布</button>
-  </navigator><view class='line'></view>  
+  </navigator>
 </view>
-</view>
+
 <!--微信 电话 qq ... 联系方式-->
