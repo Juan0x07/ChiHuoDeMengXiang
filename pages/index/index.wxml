@@ -1,4 +1,6 @@
 <!--pages/index/index.wxml-->
+<!--test-->
+
 <!--search-->
 <van-search  bind:focus='goSearch' placeholder="搜你想吃" />
 <!--swiper for ads-->
@@ -28,7 +30,7 @@
         <view class ="row">
           <view class='price'>€{{item.price}}</view>
           <view class='little nearby'>/份</view>
-          <view class='zanview'><button class='little nearby zanbtn'>点赞</button></view>
+          <view class='zanview'  data-id="{{item.id}}"  style="{{item.checked?'color:red;':'color:#bfbfbf;'}}" bindtap='dianji' class='little nearby zanbtn'>点赞</view>
         </view>
        </view></view> <view class='line'></view>  
   </view>

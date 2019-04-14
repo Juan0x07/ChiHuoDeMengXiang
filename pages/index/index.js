@@ -179,5 +179,62 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  dianji: function (e) {
+    console.log(e.currentTarget.dataset.id)
+    this.setData({
+      isLike: !e.target.dataset.favourite
+    })
+  },
+  /*更新点赞*/
+  update_zan: function (e) {
+    var that = this;
+    var data = e.currentTarget.dataset;
+    var mid = data.mid;
+    var cookie_mid = wx.getStorageSync('zan') || [];//获取全部点赞的mid  
+    var isadd = 1;
+    var newmessage = [];
+    if (cookie_mid.includes(mid)) {//说明已经点过赞,取消赞  
+      isadd = 0;
+      var m = 0;
+      for (var j in cookie_mid) {
+        if (cookie_mid[j] != mid) {
+          newmessage[m] = cookie_mid[j];
+          m++
+        }
+      }
+      wx.setStorageSync('zan', newmessage);//删除取消赞的mid  
+    } else {
+      cookie_mid.unshift(mid);
+      wx.setStorageSync('zan', cookie_mid);//新增赞的mid  
+    }
+    wx.request({
+      url: app.globalData.api.api_system,
+      data: {
+        action: 'zannum',
+        mid: mid,
+        isadd: isadd,
+        wxid: app.globalData.wxid
+      },
+      method: 'GET',
+      // header: {},   
+      success: function (res) {
+        var message = that.data.message;
+        for (var i in message) {
+          if (message[i].mid == mid) {
+            if (isadd) {
+              message[i].zan = parseInt(message[i].zan) + 1
+            } else {
+              message[i].zan = parseInt(message[i].zan) - 1
+            }
+
+          }
+        }
+        that.setData({
+          message: message
+        })
+      }
+    })
+    }
+
 })

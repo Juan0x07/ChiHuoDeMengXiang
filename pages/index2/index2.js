@@ -1,10 +1,13 @@
 // pages/index2/index2.js
+var idTime; 
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    tag1: ['不限','短租','长租'],
+    ctag1:0,
     "allHouses": [
       {
         "id": 1,
@@ -31,7 +34,17 @@ Page({
     //tag list
     tag: ['pikachu', 'miaow', 'irelia', 'lux', 'akali']
   },
-
+  changeTag:function(e){
+    this.setData({
+      ctag1: e.currentTarget.dataset.idx
+    })
+  },
+  noneAll: function (e) {
+    this.setData({
+      ctag1: 0
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */

@@ -4,9 +4,9 @@
     "van-notice-bar": "/dist/notice-bar/index"
   },
   "pages":[
-"pages/index2/index2",
+    "pages/index2/index2",
+    "pages/index/index",
 "pages/index4/index4",
-"pages/index/index",
 "pages/index/search/search",
 "pages/index2/myloge/myloge",
 "pages/index/filter/filter",
