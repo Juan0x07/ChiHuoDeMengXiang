@@ -23,6 +23,18 @@ swiper{
   margin: 15rpx;margin-bottom: 25rpx;
   height: 250rpx;border-radius: 30rpx;box-shadow: 0rpx 5rpx 10rpx 0rpx #a1a1a1;
 }
+.bgrey{background-color: grey; padding:8rpx}
+.bblack{background-color: rgb(83, 81, 81);margin: 15rpx;border-radius: 30rpx; padding:25rpx;}
+.icon{
+  width: 155rpx;
+  height:155rpx;
+  border-radius:50%;
+  display: flex;
+  overflow:hidden;
+  text-align: center;
+}
+.username{color:#fff; padding-left:20rpx;display: flex;align-items: center;justify-content: center;
+}
 swiper-item{border-radius:30rpx;}
 image{width: 100%;}
 .price{color:red;font-weight:bold;font-size:30rpx}

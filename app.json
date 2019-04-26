@@ -3,25 +3,25 @@
     "van-search": "/dist/search/index",
     "van-notice-bar": "/dist/notice-bar/index"
   },
-  "pages":[
+  "pages": [
+    "pages/index5/index5",
     "pages/index2/index2",
     "pages/index/index",
-"pages/index4/index4",
-"pages/index/search/search",
-"pages/index2/myloge/myloge",
-"pages/index/filter/filter",
-"pages/index/resto/resto",
-"pages/index2/filter/filter",
-"pages/index2/loge/loge",
-"pages/index3/index3",
-"pages/index4/help/help",
-"pages/index4/myhelp/myhelp",
-"pages/index5/index5"
+    "pages/index4/index4",
+    "pages/index/search/search",
+    "pages/index2/myloge/myloge",
+    "pages/index/filter/filter",
+    "pages/index/resto/resto",
+    "pages/index2/filter/filter",
+    "pages/index2/loge/loge",
+    "pages/index3/index3",
+    "pages/index4/help/help",
+    "pages/index4/myhelp/myhelp"
   ],
-  "window":{
+  "window": {
     "navigationBarTitleText": "图方便",
     "navigationBarBackgroundColor": "#000000",
-    "backgroundColor":"#ededed"
+    "backgroundColor": "#ededed"
   },
   "tabBar": {
     "list": [
@@ -46,5 +46,6 @@
         "text": "我的"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

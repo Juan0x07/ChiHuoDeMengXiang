@@ -14,3 +14,7 @@
        </view></view> <view class='line'></view>
     </view> 
 </view>
+
+  <navigator url="../../pages/index2/myloge/myloge"> 
+      <button class="fabu">我要发布</button>
+  </navigator>
