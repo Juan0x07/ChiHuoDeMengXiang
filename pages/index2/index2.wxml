@@ -2,26 +2,28 @@
 <!--tag filter https://www.jianshu.com/p/f490c62643d3 -->
 <view class='part1 center padtop padbot'>
 <button class="btn_mini" plain='true' bindtap="noneAll">全部不限</button>
+<!--出租时长tag-->
 <view class='taglittle black'>出租时长</view>
 <view class="tagbar">  
-<text wx:for="{{tag1}}" data-idx="{{index}}" class="item {{ ctag1==index ? 'active' : ''}}" wx:key="unique" bindtap="changeTag">{{item}}</text>  
+<text wx:for="{{tag1}}" data-idx="{{index}}" class="item {{ ctag1==index ? 'active' : ''}}" wx:key="unique" bindtap="changeTag1">{{item}}</text>  
 </view>
-</view>
-<!--tag filter-->
-
-
+<!--地点tag-->
 <view class='taglittle black'>地点</view>
-<view class ="row">
-  <button class="btn_mini">不限</button>
-  <button class="btn_mini">地铁沿线</button>
+<view class="tagbar">  
+<text wx:for="{{tag2}}" data-idx="{{index}}" class="item {{ ctag2==index ? 'active' : ''}}" wx:key="unique" bindtap="changeTag2">{{item}}</text>  
 </view>
-<view class='taglittle black'>展示</view>
-<view class ="row">
-  <button class="btn_mini">选中</button>
-  <button class="btn_mini" plain='true'>未选中</button>
+<!--交通tag-->
+<view class='taglittle black'>交通</view>
+<view class="tagbar">  
+<text wx:for="{{tag3}}" data-idx="{{index}}" class="item {{ ctag3==index ? 'active' : ''}}" wx:key="unique" bindtap="changeTag3">{{item}}</text>  
+</view>
+<!--合租tag-->
+<view class='taglittle black'>是否合租</view>
+<view class="tagbar">  
+<text wx:for="{{tag4}}" data-idx="{{index}}" class="item {{ ctag4==index ? 'active' : ''}}" wx:key="unique" bindtap="changeTag4">{{item}}</text>  
+</view>
+</view>
 
-
-</view> 
 <!--container for loges-->
 <view class='part1 center'>
 <view class ="row"></view>

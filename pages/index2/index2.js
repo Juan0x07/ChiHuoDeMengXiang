@@ -8,6 +8,12 @@ Page({
   data: {
     tag1: ['不限','短租','长租'],
     ctag1:0,
+    tag2: ['不限', '一大', '二大', '三大', '市中心'],
+    ctag2: 0,
+    tag3: ['不限', 'A线沿线', 'B线沿线','其他'],
+    ctag3: 0,
+    tag4: ['不限', '单人', '合租'],
+    ctag4: 0,
     "allHouses": [
       {
         "id": 1,
@@ -34,17 +40,32 @@ Page({
     //tag list
     tag: ['pikachu', 'miaow', 'irelia', 'lux', 'akali']
   },
-  changeTag:function(e){
+  changeTag1:function(e){
     this.setData({
       ctag1: e.currentTarget.dataset.idx
     })
   },
-  noneAll: function (e) {
+  changeTag2: function (e) {
     this.setData({
-      ctag1: 0
+      ctag2: e.currentTarget.dataset.idx
     })
   },
-  
+  changeTag3: function (e) {
+    this.setData({
+      ctag3: e.currentTarget.dataset.idx
+    })
+  },
+  changeTag4: function (e) {
+    this.setData({
+      ctag4: e.currentTarget.dataset.idx
+    })
+  },
+  noneAll: function (e) {
+    this.setData({
+      ctag1: 0,
+      ctag2: 0
+    })
+  }, 
   /**
    * 生命周期函数--监听页面加载
    */
