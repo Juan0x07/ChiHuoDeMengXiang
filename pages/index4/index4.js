@@ -5,36 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-    "allDiscussions": [
-      {
-        "id": 1,
-        "title": "求翻译",
-        "description": "找翻译呀找翻译",
-        "tag": "求助",
-        "owner": 1
-      },
-      {
-        "id": 2,
-        "title": "求翻译1",
-        "description": "找翻译呀找翻译",
-        "tag": "求助",
-        "owner": 1
-      },
-      {
-        "id": 3,
-        "title": "求翻译2",
-        "description": "找翻译呀找翻译",
-        "tag": "求助",
-        "owner": 1
-      }
-    ]
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    wx.request({
+      url: 'http://47.254.154.195:8083/discussion/getalldiscussions',
+      method: 'GET',
+      success: function (res) {
+        console.log('data : ' + res.data);
+        that.setData({
+          allDiscussions: res.data.allDiscussions
+        });
+      }
+    });
   },
 
   /**

@@ -12,9 +12,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      loge: options.id
-    })
+    var that = this;
+    wx.request({
+      url: 'http://47.254.154.195:8083/house/gethousebyid?houseId=' + options.id,
+      method: 'GET',
+      success: function (res) {
+        that.setData({
+          house: res.data.houseById
+        });
+        console.log(res.data.houseById);
+        console.log(res.data.houseById);
+      }
+    });
   },
 
   /**

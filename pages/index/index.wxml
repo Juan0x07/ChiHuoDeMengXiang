@@ -1,6 +1,4 @@
 <!--pages/index/index.wxml-->
-<!--test-->
-
 <!--search-->
 <van-search  bind:focus='goSearch' placeholder="搜你想吃" />
 <!--swiper for ads-->
@@ -11,8 +9,7 @@
   <swiper-item> <image src='../../images/03.png'></image> </swiper-item>
 </swiper>
 <!--notification-->
-<van-notice-bar left-icon="https://img.yzcdn.cn/1.png"
-  text="从即日起，外卖团队将就送餐服务进行调整" backgroundColor='white' color='#a0a0a0'
+<van-notice-bar text="从即日起，外卖团队将就送餐服务进行调整" backgroundColor='white' color='#a0a0a0'
 />
 <!--container for plats-->
 <view class='part1 center'>
@@ -40,7 +37,7 @@
 <view class ="row">
 <view class='title1'>热门中餐</view></view>
   <view wx:for="{{allRestaurants}}" wx:key>
-     <navigator url="../../pages/index/resto/resto?id={{item.resto}}"> 
+     <navigator url="../../pages/index/resto/resto?id={{item.id}}"> 
       <view class ="part2 row">
       <image class="emage" src='../../images/plat1.jpg'></image>
        <view class='part3'>

@@ -4,50 +4,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-    "platsByRestaurant": [
-      {
-        "id": 1,
-        "name": "特色生煎包",
-        "restaurantId": 1,
-        "image": null,
-        "price": 0.5,
-        "description": "正宗上海生煎包，皮薄馅大易推倒",
-        "aimer": 2,
-        "isSpecial": true,
-        "tags": [
-          {
-            "platTag": "包子"
-          },
-          {
-            "platTag": "鲁菜"
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "name": "饺子",
-        "restaurantId": 1,
-        "image": null,
-        "price": 8.5,
-        "description": "张张饺子",
-        "aimer": 1,
-        "isSpecial": false,
-        "tags": [
-          {
-            "platTag": "饺子"
-          }
-        ]
-      }
-    ]
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      resto: options.id
-    })
+    var that = this;
+    wx.request({
+      url: 'http://47.254.154.195:8083/restaurant/getrestaurantbyid?restaurantId='+options.id,
+      method: 'GET',
+      success: function (res) {
+        that.setData({
+          restaurant: res.data.restaurant
+        });
+        console.log(res.data.restaurant);
+      }
+    });
   },
 
   /**

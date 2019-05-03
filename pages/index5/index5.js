@@ -5,10 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    navbar: [ '我的租房', '我的二手', '我的生活'],
-    currentTab: 0,
-    datac:0,
-    data1: [{
+    active: 1,
+    data3: [{
       "id": 1,
       "image1": null,
       "image2": null,
@@ -29,7 +27,7 @@ Page({
       "long": true,
       "shared": false
     }],
-    data2: [{
+    data1: [{
       "id": 2,
       "owner": 2,
       "name": "显示屏",
@@ -42,7 +40,7 @@ Page({
       "aimer": 2,
       "tag": "学习"
     }],
-    data3: [{
+    data2: [{
       "id": 1,
       "title": "求翻译",
       "description": "找翻译呀找翻译",
@@ -50,11 +48,7 @@ Page({
       "owner": 1
     }],
   },
-  navbarTap: function (e) {
-    this.setData({
-      currentTab: e.currentTarget.dataset.idx
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

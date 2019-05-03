@@ -4,26 +4,26 @@
   <view>
     <image class='emage' src='../../../images/01.png'></image>
   </view>
-  <view class ="row">
+  <view>
   <!--resto name
   <view class="title">{{resto}}</view>-->
-  <view class="title">冯记中餐馆</view>
-  <view>加微信</view>
+  <view class="title">{{restaurant.name}}</view>
+  <view class='little black'>加微信</view>
   </view>
 </view>
 <!--container for introductions-->
 <view class='part1 center padbot'>
 <view class ="row">
   <view class='little black'>商家简介：</view>
-  <view class='little'>大碗喝汤，大口吃肉！</view>
+  <view class='little'>{{restaurant.description}}</view>
 </view>
 <view class ="row">
   <view class='little black'>餐厅地址：</view>
-  <view class='little'>大碗喝汤，大口吃肉！</view>
+  <view class='little'>{{restaurant.address}}</view>
 </view>
 <view class ="row">
   <view class='little black'>联系电话：</view>
-  <view class='little'>大碗喝汤，大口吃肉！</view>
+  <view class='little'>{{restaurant.telephone}}</view>
 </view>
 </view>
 
@@ -32,7 +32,7 @@
 <view class ="row">
   <view class='title1'>热销菜品</view>
 </view>
-  <view wx:for="{{platsByRestaurant}}" wx:key>
+  <view wx:for="{{restaurant.plats}}" wx:key>
       <view class ="part2 row">
        <image class="emage" src='{{item.image}}'></image>
        <view class='part3'>

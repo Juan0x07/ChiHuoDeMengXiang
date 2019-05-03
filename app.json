@@ -4,8 +4,8 @@
     "van-notice-bar": "/dist/notice-bar/index"
   },
   "pages": [
-    "pages/index2/index2",
     "pages/index5/index5",
+    "pages/index2/index2",
     "pages/index/index",
     "pages/index4/index4",
     "pages/index/search/search",
@@ -43,7 +43,11 @@
       },
       {
         "pagePath": "pages/index5/index5",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "images/icon5.png",
+        "selectedIconPath":"images/icon5.png",
+        "color":"#94db60",
+        "selectedColor":"#064152"
       }
     ]
   },
