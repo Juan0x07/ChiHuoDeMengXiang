@@ -10,7 +10,11 @@
         <view class='title2'>{{item.name}}</view>
         <view class='little'>{{item.discription}}</view>
         <view class='little'>赞 {{item.aimer}}</view>
-        <view class='price'>€{{item.price}}</view>
+        <view class ="row">
+        <view class='price'>€{{item.price}}</view><view>
+            <view wx:if='{{item.ilike}}'><button id="{{item.id}}" class="btn_mini foot" bindtap="szan">已点赞</button></view>
+            <view wx:else><button id="{{item.id}}" class="btn_mini foot" plain='true' bindtap="dzan">点赞</button></view>
+          </view></view>
        </view></view> <view class='line'></view>
     </view> 
 </view>

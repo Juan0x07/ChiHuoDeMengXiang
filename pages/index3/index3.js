@@ -13,14 +13,17 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
+    that.setData({
+      userid: getApp().globalData.userid
+    });
     wx.request({
-      url: 'http://47.254.154.195:8083/object/getallobjects',
+      url: 'http://47.254.154.195:8083/object/getallobjects?userId=' + that.data.userid,
       method: 'GET',
       success: function (res) {
         that.setData({
           allObjects: res.data.allObjects
         });
-        re
+
       }
     });
   },
@@ -72,5 +75,27 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  szan: function (e) {
+    var that = this;
+    wx.request({
+      url: 'http://47.254.154.195:8083/object/dislikeobject?userId=' + that.data.userid + "&objectId=" + e.target.id,
+      method: 'GET',
+      success: function (res) {
+        //change 
+        that.onLoad();
+      }
+    });
+  },
+  dzan: function (e) {
+    var that = this;
+    wx.request({
+      url: 'http://47.254.154.195:8083/object/likeobject?userId=' + that.data.userid + "&objectId=" + e.target.id,
+      method: 'GET',
+      success: function (res) {
+        //change 
+        that.onLoad();
+      }
+    });
   }
 })
