@@ -27,7 +27,10 @@
         <view class ="row">
           <view class='price'>€{{item.price}}</view>
           <view class='little nearby'>/份</view>
-          <view class='zanview'  data-id="{{item.id}}"  style="{{item.checked?'color:red;':'color:#bfbfbf;'}}" bindtap='dianji' class='little nearby zanbtn'>点赞</view>
+          <view>
+            <view wx:if='{{item.ilike}}'><button id="{{item.id}}" class="btn_mini foot" bindtap="szan">已点赞</button></view>
+            <view wx:else><button id="{{item.id}}" class="btn_mini foot" plain='true' bindtap="dzan">点赞</button></view>
+          </view>
         </view>
        </view></view> <view class='line'></view>  
   </view>

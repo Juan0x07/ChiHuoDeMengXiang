@@ -19,8 +19,10 @@
         <view class='little'>赞 {{item.aimer}}</view>
         <view class ="row">
         <view class='price'>€{{item.price}}</view>
-        <button class="btn_mini" plain='true'>编辑</button>
-        <button class="btn_mini" plain='true'>删除</button>
+        <view class ="row">
+        <image class="icon5" id="{{item.id}}" bindtap='modifyObject' src='../../images/icon_modify.png'></image>
+        <image class="icon5" id="{{item.id}}" bindtap='deleteObject' src='../../images/icon_delete.png'></image>
+        </view>
         </view>
        </view></view> <view class='line'></view>
     </view> 
@@ -37,8 +39,8 @@
         <view class='little'>{{item.description}}</view>
         </view>
         <view class ="row">
-        <image class="icon5" src='../../images/icon_modify.png'></image>
-        <image class="icon5" src='../../images/icon_delete.png'></image>
+        <image class="icon5" id="{{item.id}}" bindtap='modifyLife' src='../../images/icon_modify.png'></image>
+        <image class="icon5" id="{{item.id}}" bindtap='deleteLife' src='../../images/icon_delete.png'></image>
         </view>
        </view>
     <view class='line'></view></view> </view> 
@@ -58,8 +60,10 @@
         <view class ="row">
           <view class='price'>€{{item.price}}</view>
           <view class='little nearby'>/月</view>
-          <button class="btn_mini" plain='true'>编辑</button>
-        <button class="btn_mini" plain='true'>删除</button>
+          <view class ="row">
+        <image class="icon5" id="{{item.id}}" bindtap='modifyHouse' src='../../images/icon_modify.png'></image>
+        <image class="icon5" id="{{item.id}}" bindtap='deleteHouse' src='../../images/icon_delete.png'></image>
+        </view>
         </view> 
        </view></view> 
     </view> 

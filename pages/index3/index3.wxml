@@ -15,6 +15,6 @@
     </view> 
 </view>
 
-  <navigator url="../../pages/index2/myloge/myloge"> 
+  <navigator url="../../pages/index3/mything/mything"> 
       <button class="fabu">我要发布</button>
   </navigator>

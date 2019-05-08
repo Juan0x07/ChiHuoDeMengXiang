@@ -1,7 +1,6 @@
 <!--pages/index2/loge/loge.wxml-->
 <view class='part1 center padbot'>
 <view class ="row">
-  <view >标题：</view>
   <view >{{house.title}}</view>
 </view>
 <view class ="row">
@@ -11,5 +10,13 @@
 <view class ="row">
   <view class='little black'>地址：</view>
   <view class='little'>{{house.location}}</view>
+</view>
+<view class ="row">
+  <view class='little black'>联系人：</view>
+  <view class='little'>{{house.contactName}}</view>
+</view>
+<view class ="row">
+  <view class='little black'>联系电话：</view>
+  <view class='little'>{{house.contactNum}}</view>
 </view>
 </view>

@@ -1,10 +1,41 @@
 // pages/index2/myloge/myloge.js
+//getApp().globalData.userid,
 Page({
   formSubmit: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
-  },
-  formReset: function () {
-    console.log('form发生了reset事件')
+    var that = this;
+    if (that.data.id){
+      that.setData({
+        url:'http://47.254.154.195:8083/house/modifyhouse'
+      })
+    }
+    else{
+      that.setData({
+      url:'http://47.254.154.195:8083/house/addhouse'
+      })
+    }
+      wx.request({
+        url: that.data.url,
+        method:'POST',
+        data:{
+          "owner": getApp().globalData.userid,
+          "title": e.detail.value.title,
+          "description": e.detail.value.description,
+          "location": e.detail.value.location,
+          "surface": e.detail.value.surface,
+          "price": e.detail.value.price,
+          "start": "2019-03-07T00:00:00.000+0000",
+          "locationtag": e.detail.value.locationtag,
+          "traffictag": e.detail.value.traffictag,
+          "contactName": e.detail.value.contactName,
+          "contactNum": e.detail.value.contactNum,
+          "contactWechat": e.detail.value.contactWechat,
+        },
+        success() {
+          wx.switchTab({
+            url: "/pages/index2/index2"
+          })
+        }
+      })
   },
   uploadPhoto() {
     var that = this;
@@ -30,7 +61,28 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    this.setData({
+      id : options.id
+    });
+    if (options.id){
+      wx.request({
+        url: 'http://47.254.154.195:8083/house/gethousebyid?houseId=' + that.data.id,
+        method: 'GET',
+        success: function (res) {
+          that.setData({
+            "title": res.data.houseById.title,
+            "description": res.data.houseById.description,
+            "location": res.data.houseById.location,
+            "surface": res.data.houseById.surface,
+            "price": res.data.houseById.price,
+            "contactName": res.data.houseById.contactName,
+            "contactNum": res.data.houseById.contactNum,
+            "contactWechat": res.data.houseById.contactWechat,
+          })
+        }
+      });
+    }
   },
 
   /**
@@ -44,7 +96,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.onLoad()
   },
 
   /**

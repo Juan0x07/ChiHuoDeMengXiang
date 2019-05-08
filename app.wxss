@@ -1,7 +1,27 @@
-.tagbar{  
- 
-  background: #fff;  
-}  
+radio .wx-radio-input{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx;
+   height: 40rpx;
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background: red;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+.tagbar{ background: #fff;  }  
 .tagbar .item{ 
   margin-left: 15rpx;
   padding-left: 15rpx;
@@ -13,6 +33,7 @@
   border-color: #a1a1a1;
   color:#a1a1a1;
 }  
+.right{display: flex;flex-direction: row;position: relative;align-items:center;}
 .icon5{width:40rpx;height:40rpx;margin:10rpx}
 /* 顶部导航字体颜色 */
 .tagbar .item.active{  
@@ -60,7 +81,8 @@ image{width: 100%;}
 .title2{font-size:28rpx;font-weight:bold;color:#333333}
 .part2{margin:22rpx}
 .part3{margin-left:20rpx;margin-top:13rpx;}
-.row{flex-direction:row;display: flex;}
+.row{flex-direction:row;display: flex;position: relative;}
+.foot{position: relative;align-items: center;}
 .tagfilter{
    background-color: yellow;
 }

@@ -1,1 +1,4 @@
 /* pages/index2/myloge/myloge.wxss */
+page {
+    background-color: #ededed;
+}

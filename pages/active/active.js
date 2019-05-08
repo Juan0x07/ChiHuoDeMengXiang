@@ -1,4 +1,4 @@
-// pages/index4/help/help.js
+// pages/active/active.js
 Page({
 
   /**
@@ -12,7 +12,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    getApp().createUser(); 
+    setTimeout(function () {
+        wx.switchTab({
+          url: "/pages/index/index"
+        })
+    }, 3200) //3s
   },
 
   /**
